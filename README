@@ -1,0 +1,8 @@
+nix-shell shell.nix
+python -m venv ~/.virtualenvs/hoi-experiment
+source ~/.virtualenvs/hoi-experiment/bin/activate
+pip install fontmake
+git clone https://github.com/ctrlcctrlv/FontForge-Higher-Order-Interpolation.git
+cd FontForge-Higher-Order-Interpolation
+ln -s lib ~/.config/fontforge/python/lib
+ln -s FF_HOI_UI.py ~/.config/fontforge/python/FF_HOI_UI.py
